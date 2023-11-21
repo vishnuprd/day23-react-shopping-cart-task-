@@ -1,0 +1,133 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* shopcard.css */
+
+.card {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  margin-bottom:50px;
+  margin-left:50px;
+
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card-img-top {
+  height: 12rem;
+  object-fit: cover;
+
+}
+
+.card-body {
+  padding: 1.5rem;
+}
+
+.text-center {
+  color: #333;
+}
+
+.fw-bolder {
+  font-weight: bold;
+}
+
+
+/* Cart.css */
+
+/* Override Bootstrap styles */
+.card {
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-header {
+  background-color: #343a40;
+  color: #fff;
+  border-radius: 10px 10px 0 0;
+}
+
+.card-body {
+  padding: 20px;
+}
+
+.table {
+  font-size: 14px;
+}
+
+/* Styling for product rows */
+.table tbody tr {
+  border-bottom: 1px solid #dee2e6;
+}
+
+/* Styling for quantity input */
+.form-control.text-center {
+  max-width: 60px;
+  margin: 0 auto;
+}
+
+/* Styling for promo code input */
+.form-control::placeholder {
+  color: #6c757d;
+}
+
+/* Styling for discount and total price */
+.text-right {
+  font-size: 18px;
+}
+
+/* Styling for action buttons */
+.float-right button {
+  margin-left: 10px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .table thead {
+    display: none;
+  }
+
+  .table, .table tbody, .table tr, .table td {
+    display: block;
+    width: 100%;
+  }
+
+  .table tr {
+    margin-bottom: 15px;
+  }
+
+  .table td {
+    text-align: right;
+    padding-left: 50%;
+    position: relative;
+  }
+
+  .table td:before {
+    content: attr(data-label);
+    position: absolute;
+    left: 0;
+    width: 50%;
+    padding-left: 15px;
+    font-size: 14px;
+    font-weight: bold;
+  }
+}
+/* Shopcard.css */
+
+
+
+
+
